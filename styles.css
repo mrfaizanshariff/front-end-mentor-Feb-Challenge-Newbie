@@ -1,0 +1,164 @@
+:root{
+  --LightRed: hsl(0, 100%, 67%);
+  --LightRedBg: hsla(0, 100%, 67%,0.07);
+--OrangeyYellow: hsl(39, 100%, 56%);
+--OrangeyYellowBg: hsla(39, 100%, 56%,0.07);
+--GreenTeal: hsl(166, 100%, 37%);
+--GreenTealBg: hsla(166, 100%, 37%,0.07);
+--CobaltBlue: hsl(234, 85%, 45%);
+--CobaltBlueBg: hsla(234, 85%, 45%,0.07);
+
+--Lightslatebluebackground: hsl(252, 100%, 67%);
+--Lightroyalbluebackground: hsl(241, 81%, 54%);
+--VioletBluecircle: hsla(256, 72%, 46%, 1);
+--PersianBluecircle: hsla(241, 72%, 46%, 0);
+
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+body {
+  margin:0;
+  padding:0,;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  /* font-family: 'Poppins', sans-serif; */
+}
+main{
+  margin:6rem 0;
+  height: 60vh;
+  width: 100vw;
+}
+
+.score-container > h4{
+  color: var(--Lightlavender);
+}
+.score-container{
+  flex: 0.25;
+  background-image: linear-gradient(to bottom, var(--Lightslatebluebackground) , var(--Lightroyalbluebackground));;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  position: relative;
+  right: -25px;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.summary-container {
+  padding:0.2rem 0rem 0.2rem 2.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 0.21;
+  border-radius:1rem;
+  box-shadow: 12px 12px 8px hsla(221, 100%, 96%,0.9);
+}
+p{
+  text-align: center;
+  color: var(--Lightlavender);
+  padding: 1rem 2rem;
+  margin:0;
+  line-height: 22px;
+  font-weight: 400;
+  /* width: 50%; */
+}
+.score-number{
+  color: var(--White);
+  font-size: 3.8rem;
+  position: relative;
+  top: 5px;
+  font-weight: bolder;
+}
+.score-number-container{
+  border-radius: 100%;
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--Lightlavender);
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  background-image: linear-gradient(to top, var(--PersianBluecircle),var(--VioletBluecircle));
+}
+.score-number-container + div{
+  color: var(--White);
+  font-weight: bolder;
+  margin: 1rem 0 0 0 ;
+}
+.card-container > :nth-child(2){
+  background-color: var(--LightRedBg);
+}
+.card-container > :nth-child(3){
+  background-color: var(--OrangeyYellowBg);
+}
+.card-container > :nth-child(4){
+  background-color: var(--GreenTealBg);
+}
+.card-container > :nth-child(5){
+  background-color: var(--CobaltBlueBg);
+}
+.card{
+  margin: 1rem 0;
+  width: 12rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding:0.3rem 1rem;
+}
+
+  .card1 > :first-child,
+  .card2 > :first-child,
+  .card3 > :first-child,
+  .card4 > :first-child{
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .card1 > :first-child{
+    color: var(--LightRed);
+  }
+  .card2 > :first-child{
+    color: var(--OrangeyYellow);
+  }
+  .card3 > :first-child{
+    color: var(--GreenTeal);
+  }
+  .card4 > :first-child{
+    color: var(--CobaltBlue);
+  }
+
+  .card > :nth-child(2){
+    font-weight: 900;
+  }
+  .card1 > :nth-child(2) > :nth-child(1),
+  .card2 > :nth-child(2) > :nth-child(1),
+  .card3 > :nth-child(2) > :nth-child(1),
+  .card4 > :nth-child(2) > :nth-child(1){
+    color:gray;
+    font-weight: 900;
+  }
+  button{
+  margin: 0 0;
+  width: 14rem;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  border-radius: 2rem;
+  padding:0.6rem 1.5rem;
+  background-color: var(--Darkgrayblue);
+  border: none;
+  }
+
+  button:hover{
+  background-image: linear-gradient(to bottom, var(--Lightslatebluebackground) , var(--Lightroyalbluebackground))
+  }
